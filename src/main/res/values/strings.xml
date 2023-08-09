@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Blink memory</string>
+    <string name="setting_page">Setting</string>
+    <string name="type_the_number">TYPE THE NUMBER</string>
+    <string name="game_over">Game Over!</string>
+    <string name="ply">▶</string>
+    <string name="share">SHARE</string>
+    <string name="memory_game">Blink Memory Game</string>
+    <string name="todo">TODO</string>
+    <string name="facebook_app_id">1440055836398178</string>
+    <string name="fb_login_protocol_scheme">fb1440055836398178</string>
+    <string name="facebook_client_token">fc8eea80f9de14f8567ff2f4cff4a6db</string>
+    <string name="share_text">Share the Game Now!!</string>
+    <string name="final_score">Your score is 65</string>
+
+</resources>

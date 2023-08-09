@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/memory_game"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="267dp"
+            android:layout_marginTop="10dp"
+            android:padding="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/brain" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:hint="Enter your username" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <RelativeLayout
+            android:id="@+id/ply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mvw"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/play"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/ply"
+                android:layout_centerInParent="true"
+                android:onClick="submitName"/>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="287dp"
+        android:layout_marginTop="200dp"
+        android:padding="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/brain" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:indeterminate="true"
+        android:progress="0"
+        android:layout_marginTop="30dp"
+        />
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>
+
+
